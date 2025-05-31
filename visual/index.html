@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>交通态势可视分析系统</title>
+</head>
+
+<body>
+    <div class="overby hidden"></div>
+    <img class="img-scale hidden" />
+    <div class="sidebar-box">
+        <div class="sidebar">
+            <div class="menu-title">交通态势可视分析</div>
+            <div class="second-menu" id="home"><span class="menu-text">&#8962;</span>主页</div>
+            <div class="second-menu" id="speed">
+                <span class="menu-text">&equiv;</span>流量与速度分析<span class="arrow">&gt;</span>
+            </div>
+            <div class="third-menu-list" id="speed-list">
+                <div class="third-menu" id="diff">
+                    <span class="menu-text">&equiv;</span>不同类型交通参与者<span class="arrow">&gt;</span>
+                </div>
+                <div class="third-menu" id="total">
+                    <span class="menu-text">&equiv;</span>交通整体<span class="arrow">&gt;</span>
+                </div>
+            </div>
+            <div class="second-menu" id="abnormal">
+                <span class="menu-text">&equiv;</span>交通违规事件分析<span class="arrow">&gt;</span>
+            </div>
+            <div class="second-menu" id="jam">
+                <span class="menu-text">&equiv;</span>拥堵分析<span class="arrow">&gt;</span>
+            </div>
+            <div class="second-menu" id="health">
+                <span class="menu-text">&equiv;</span>道路健康度分析<span class="arrow">&gt;</span>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-head">
+            <button class="hide-sidebar">&lt;</button>
+            <div class="content-title">主页</div>
+            <button class="bt-back hidden" disabled>&larr;</button>
+            <select class="op-abnormal hidden">
+                <option value="time">时间</option>
+                <option value="road">路口</option>
+            </select>
+        </div>
+        <div class="history"></div>
+        <div class="content">
+            <h2 class="home-title">ChinaVis2023交通态势分析</h2>
+            <div class="home-text"><span>测试</span></div>
+            <div class="img-list content-home"></div>
+            <div class="content-speed hidden">
+                <iframe src="" width="100%" height="100%" frameborder="0" scrolling="no"
+                    class="iframe-speed hidden"></iframe>
+            </div>
+            <div class="content-abnormal hidden">
+                <table class="table-abnormal"></table>
+                <div class="pad-abnormal"></div>
+            </div>
+            <div class="content-jam hidden"></div>
+            <div class="content-health hidden">
+                <iframe src="./health.html" width="100%" height="100%" frameborder="0" scrolling="no"
+                    class="iframe-health hidden"></iframe>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
